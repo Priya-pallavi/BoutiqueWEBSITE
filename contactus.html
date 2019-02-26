@@ -1,0 +1,31 @@
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="stylesheet/contactus.css">
+    <script type="text/javascript">
+      function  a(event){
+        var char = event.which;
+        if(char >31 && char != 32 && (char<65 || char>90) && (char < 97 || char >122)){
+          return false;
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <div class="contact">
+      <h2>We are always ready to serve you!</h2>
+    </div>
+    <div class="contact-form">
+      <form action="contacts.php" method="post">
+    <input type="text" name="name" class="form-control" placeholder="Your Name" required onkeypress="return a(event);"/><br>
+    <input type="text" name="email" class="form-control" placeholder="Your Email" required><br>
+    <textarea name="area" rows="4" class="form-control" placeholder="Message" required></textarea><br>
+        <input type="submit" name="submit">
+        <center><a href="home.html"><h3>Home Page</h3></a></center>
+      </form>
+    </div>
+  </body>
+</html>

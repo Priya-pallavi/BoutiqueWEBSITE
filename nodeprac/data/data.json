@@ -1,0 +1,21 @@
+[{
+    "animal":"Zebra",
+    "age":23,
+    "gender":"male"
+},
+{
+    "animal":"Lion",
+    "age":23,
+    "gender":"male"
+},
+{
+    "animal":"Tiger",
+    "age":23,
+    "gender":"male"
+},
+{
+    "animal":"chicken",
+    "age":23,
+    "gender":"male"
+}
+]

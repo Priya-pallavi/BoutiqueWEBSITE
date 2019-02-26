@@ -1,0 +1,144 @@
+<html>
+    <head id="head">
+           
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Document</title>
+        
+        <link rel="stylesheet" href="stylesheet/select.css">
+        <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    
+    <!-- Latest compiled and minified JavaScript -->
+    
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <style>.islogan{border:0px;margin:2px;padding:2px;width:26px;height:20px;}</style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+   <script>
+    function imgblur(){
+        document.getElementById("i1").innerHTML='<span>clickme</span>';
+    }
+    </script>
+    <script>
+        $(document).ready(function(){
+            $("#men").hide();
+            $("#menimg").mouseenter(function(){
+                $("#men").slideToggle(500);
+            });
+            
+            $("#menimg").mouseleave(function(){
+                
+            });
+        });
+    </script>
+     <script>
+        $(document).ready(function(){
+            $("#women").hide();
+            $("#womenimg").mouseenter(function(){
+                $("#women").slideToggle(500);
+            });
+            
+            $("#womenimg").mouseleave(function(){
+                
+            });
+        });
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    <script src="js/app.js"></script>
+    </head>
+    
+    <body id="bod" ng-app="myApp" ng-controller="myController">
+
+            <div class= "navbar navbar-expand-lg navbar-dark bg-dark" id="navigation">
+                    <img src="images/logo1.jpeg" alt="" width="7%">                
+                    <img src="images/logo2.jpeg" alt="" width="10%" class="logotext">                
+                     
+                    <!-- <h1 class="text-center text-md-left" style="color: #fff;font-size: 120 px; " id ="h1ss">SocialStitch.com</h1>
+                        -->
+                   
+                        <ul class = "nav navbar-nav navbar-right nav-item">
+                               
+                            <li><a class="nav-link"  href="home.html">LogOut</a></li>
+                            
+                        </ul>
+                      
+                </div>
+                
+           
+            <div class="row">
+                    <div class="col-xs-3 animated infinite fadeInDown " class="yourElement">
+                        
+                    
+                            <div class="col-md-9"><img src="images/11.jpg" width="250px" height="120px"/><br> &nbsp;</div>
+                            <div class="col-md-9"><img src="images/12.jpg" width="250px" height="120px"><br>&nbsp;</div>
+                            <div class="col-md-9"><img src="images/13.jpg" width="250px" height="120px"/><br>&nbsp;</div>
+                            <div class="col-md-9"><img src="images/14.jpg" width="250px" height="120px"/><br>&nbsp;</div>
+                            <div class="col-md-9"><img src="images/15.jpg" width="250px" height="120px"/><br>&nbsp;</div>
+                           
+                        </div>
+                        
+                    <div class="col-xs-6" id="middle">
+                            <div class=" row">
+                                <div class="hovereffect col-xs-offset-1 col-xs-5">
+                                    <img class="img-responsive " id="menimg" src="images/men1.jpg"  width="60%"  alt="">
+                                    <ul id="men">
+                                        <li ng-repeat="name in namesList"><a href="empty1.html">{{name.bname}}</a></li>
+                                        
+                                    </ul>
+
+                                </div>
+                                <div class="hovereffect col-xs-6">
+                                    <img class="img-responsive" id="womenimg" src="images/female1.jpg"  width="50%"  alt="">
+                                    <ul id="women">
+                                            <li ng-repeat="name in fnamesList"><a href="empty.html">{{name.bname}}</a></li>
+                                    </ul>
+
+
+                                </div>
+                               
+                
+                               <!-- <div class="dropdown">
+                                    <button class="dropbtn">Men</button>
+                                    <div class="dropdown-content">
+                                      <a href="empty1.html">Saanvi Creations</a>
+                                      <a href="empty1.html">orleans boutique</a>
+                                      <a href="empty1.html">picsqueue</a>
+                                    </div>
+                                </div>-->
+                            </div>
+                    
+                    </div>    
+<!-- 
+                        <div class="col-xs-3">
+                            <div class="hovereffect">
+                                <div class="dropdown">
+                                        <button class="dropbtn">Women</button>
+                                        <div class="dropdown-content">
+                                          <a href="empty1.html">Saanvi Creations</a>
+                                          <a href="empty1.html">orleans boutique</a>
+                                          <a href="empty1.html">picsqueue</a>
+                                        </div>
+                                    </div>
+                            </div> -->
+
+
+                            <div class=" col-xs-3 animated infinite slideInUp" class="yourEleme">
+                    
+                                    <div class="col-md-9"><img src="images/01.jpg" width="250px" height="120px"/><br> &nbsp;</div>
+                                    <div class="col-md-9"><img src="images/02.jpg" width="250px" height="120px"><br>&nbsp;</div>
+                                    <div class="col-md-9"><img src="images/03.jpg" width="250px" height="120px"/><br>&nbsp;</div>
+                                    <div class="col-md-9"><img src="images/04.jpg" width="250px" height="120px"/><br>&nbsp;</div>
+                                    <div class="col-md-9"><img src="images/05.jpg" width="250px" height="120px"/><br>&nbsp;</div>
+                                   
+                                    </div>
+                                    </div>
+                                </div>
+                            </body>
+                            </html>

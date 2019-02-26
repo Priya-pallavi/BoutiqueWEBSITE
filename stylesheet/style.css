@@ -1,0 +1,165 @@
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+#navigation li a {
+    color:white;
+    font-size: 2rem;
+    margin-right: 3rem;  
+    margin-bottom:auto;
+    margin-top: 2.6rem;
+  }
+#navigation{
+  background: black;
+}
+.text{
+  font-size: 200%;
+  font-family: garamond;
+  
+}
+.btn{
+    position: absolute;;
+    bottom: 40%;
+    right:20%;
+    align-self: baseline;
+
+}
+.p{
+  color: white;
+  position:objective;
+  left: 0;
+  bottom: 50%;
+  width: 100%;
+}
+
+#slogan h1{
+  font-family: 'Coiny', cursive;
+  color: white;
+
+}
+.page-footer {
+  
+  left: 13%;
+  bottom: 0;
+  width: 100%;
+  
+  color: white;
+  text-align: center;
+  
+}
+.page-footer1 {
+  position: fixed;
+  left: 13%;
+  margin-top: 100%;
+  bottom: 0;
+  width: 100%;
+  
+  color: white;
+  text-align: center;
+  
+}
+.fas{
+  color:gold;
+  align-content: flex-end;
+  align:left;
+}
+.form group{
+  width: 100%;
+  align: left;
+  align-content: center;
+
+
+}
+.update{
+  color:gold;
+}
+
+#but{
+  position: absolute;
+top:10%; 
+ left: 210%;
+} 
+.sidenav a {
+ padding: 5% 1% 1% 10%;
+  text-decoration: none;
+  font-size: 155%;
+  color: white;
+  display: block;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav {
+  height: 100%;
+  width: 13%;
+  position: fixed;
+  z-index: 1;
+  top: 14.8%;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  padding-top: 1%;
+}
+.logotext{
+display :inline table;
+margin-left: 36%;
+margin-right: auto;
+width:15%;
+}
+a{
+  font-size: 10%;
+}
+#notif{
+  color:orange;
+  font-size:160%;
+  box-shadow: 10%;
+  
+
+
+}
+
+html {
+  font-family: sans-serif;
+  line-height: 1.15;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -ms-overflow-style: scrollbar;
+  -webkit-tap-highlight-color: transparent; }
+/* body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 1rem;
+  font-weight: normal;
+  line-height: 1.5;
+  color: #212529;
+  text-align: left;
+  background-color: #fff; } */
+
+ #bod{
+  background-color: whitesmoke;
+   background-image: url('../images/bg1234.jpg'); 
+  background-repeat:no repeat;
+  background-size:100%;
+
+} 
+#tabl{
+  color:gold;
+  font-size: 150%;
+  height: 742px;
+  
+}
+#hll{
+  color:black;
+  display: flex;}
+  
+#badg{
+  color:white;
+  background-color:black; 
+  
+}
+#ordstatus{
+  color:black;
+}
+

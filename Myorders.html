@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="stylesheet/style.css">
+    <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.css" />
+<link href="https://fonts.googleapis.com/css?family=Coiny" rel="stylesheet">
+<link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.6.3/css/all.css' integrity='sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/' crossorigin='anonymous'>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<script src="js/app.js"></script>
+<link rel="shortcut icon" type="images/jpeg" href="images/logo1.jpeg">
+</head>
+<body id="bod" ng-app="myApp">
+    <div class= "navbar navbar-expand-lg navbar-dark bg-dark" id="navigation">
+        <img src="images/logo1.jpeg" alt="" width="7%">                
+        <img src="images/logo2.jpeg" alt="" width="20%" class="logotext">                
+        <ul class = "nav navbar-nav navbar-right nav-item">
+        <li><a class="nav-link"  href="boutiquehome.html">Home</a></li>    
+    </ul>
+   
+        
+          
+    </div>        
+        <div class ="" id ="slogan">
+            <center><h1 class="text-center">Mystic Boutique</h1></center>
+        </div>
+      
+        <div ng-controller="myController" id="tabl" class="col-xs-offset-1 col-xs-6">
+            <input type="text" placeholder="search here..." name ="" id="hll" ng-model="colorFont">
+            <h1 style ="color:{{colorFont}}">{{title}}</h1>
+              
+            <table class="table " >
+                <tr>
+                    <td>name</td>
+                    <td>date</td>
+                    <td>address</td>
+                    <td>phone</td>
+                    <td>email</td>
+                    <td>shoulderLth</td>
+                    <td>shirtLth</td>
+                    <td>sleaveLth</td>
+                    <td>order status</td>
+                    <td>Update Status </td>
+                   
+                </tr>
+                <tr ng-repeat="d in data | filter:colorFont">
+                    
+                    <td>{{d.name}}  </td>
+                    <td style="width:100px">{{d.date | date}}</td>
+                    <td>{{d.address}}</td>
+                    <td>{{d.phone}}</td>
+                    <td>{{d.email}}</td>
+                    <td>{{d.measurement.shoulderLength}}</td>
+                    <td>{{d.measurement.shirtLength}}</td>
+                    <td>{{d.measurement.sleaveLength}}</td>
+                    <td>{{d.status}}</td>
+                    <td>
+                        <form>
+                        <select ng-model="ordstatus" id="ordstatus">
+                        <option value="pending">Pending</option>
+                        <option value="working">Working</option>
+                        <option value="dispatched">dispatched</option>
+                    </select>
+                    <a href="#" ng-click="update(d._id,ordstatus)"><h3 class="update">Update</h3></a>
+                </form>
+                 <!-- <input type="text" name="" id="" ng-model="status"> -->
+                </td>
+                    <td></td>
+                </tr>
+            </table>
+        </div><br>
+             <div class="container" id="contfoot">
+                    <footer class="page-footer font-small grey fixed-bottom">
+                  <div class="row">
+                      <div class="col-md-6 text-center ">
+                          
+                        <!-- Content --> 
+             <a href="aboutus.html"><h4 class="text-uppercase font-weight-bold" >About Us</h4></a> <br>
+                        <p >&copy All right Reserved. SocialStitch</p>
+              
+                      </div>
+                      <div class="col-md-2 text-left">
+                        <h4>Contanct Us</h4>
+                              <ul class="list-unstyled quick-links">
+                             <h5> 7411396603</h5> 
+                             <h5> support@SocialStitch.com</h5><br>
+                              </ul>
+                          </div> 
+                  </div>
+                   
+              </footer></div>
+            <!--  Footer --> 
+<!-- 
+        <div class="footer-main-div">
+      <div class="footer-social-icons">
+        <ul>
+          <li> <a href="#" target="_blank"><i class="fab fa-facebook"></i></a> </li>
+          <li> <a href="#" target="_blank"><i class="fab fa-twitter"></i></a> </li>
+          <li> <a href="#" target="_blank"><i class="fab fa-google-plus"></i></a> </li>
+          <li> <a href="#" target="_blank"><i class="fab fa-youtube"></i></a> </li>
+        </ul>
+      </div>
+      <div class="footer-menu-one">
+        <ul>
+          <li>
+            <a href="#">Home</a>
+            <a href="#">About Us</a>
+            <a href="#">Services</a>
+            <a href="#">Contact Us</a>
+          </li>
+        </ul>
+      </div><br>
+      <center class="down"><div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-2 text-center text-white">
+        <p class="h6">&copy All right Reversed.<a class="text-green ml-2" href="#" target="_blank">SocialStitch</a></p>
+      </div></center>
+    </div> -->
+
+</body>
+</html>

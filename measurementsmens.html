@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Men_Measurement_Page</title>
+    <style>
+  
+             .navbar {
+               overflow: hidden;
+               background-color:black;
+               position:static; /* Set the navbar to fixed position */
+               top:0; /* Position the navbar at the top of the page */
+               width: 100%; /* Full width */
+               opacity: 1;
+             
+             }
+             
+#navigation li a {
+    color:white;
+    font-size: 2rem;
+    margin-right: 3rem;  
+    margin-bottom:auto;
+    margin-top: 2.6rem;
+  }
+              .navbar a {
+               float:right;
+               display: block;
+               color: #dbc713e8;
+               text-align: center;
+               padding: 0px 15px;
+               text-decoration: none;
+             }
+             .center{
+               display:inline-table;
+               margin-left:450px;
+               margin-right:auto;
+               width:15%;
+             }
+             .navbar a:hover {
+               background: rgba(235, 235, 23, 0.774);
+               color: rgb(231, 199, 19);
+             }
+             body,html{
+             opacity: 1;
+            font-family: "Computer Modern Sans", sans-serif;
+          background-color: black;
+  background-repeat: no-repeat;
+ background-size: 100%;
+}
+     .centered {
+      position: absolute;
+      top:100px;
+      left:500px;
+      color:rgba(235, 235, 23, 0.774);
+  
+}
+.top-left{
+position:absolute;
+top:230px;
+left:150px;
+color:rgba(235, 235, 23, 0.774);
+}
+
+input[type='radio']{
+ transform: scale(1.5);
+          }
+          .agile-top p{
+    font-size: 2em;
+    color: black;
+    text-align: center;
+    top:90%;
+    letter-spacing: 0px;
+    font-weight: 120;
+  }
+  .agile {
+  background-color:rgba(235, 235, 23, 0.774);
+  color: black;
+  padding: 8px 15px;
+  border: none;
+  cursor: pointer;
+  width: 30%;
+  opacity: 0.9;
+  margin-top:30px;
+  margin-left:150px;
+}
+
+.agile:hover {
+  opacity: 1;
+}
+.radio1{
+            background-color:transparent;
+            font-size:1rem;
+            color:gold;
+            margin-left:40%;
+            top:80%;
+            border:transparent solid black;
+            width:85%;
+          }         
+    </style>
+
+     <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<link rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/dreampulse/computer-modern-web-font/master/fonts.css">
+<link rel="shortcut icon" type="images/jpeg" href="images/logo1.jpeg">
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<script src="js/app.js"></script>
+
+<script>
+  $(document).ready(function(){
+      $("#creditCardForm").hide();
+      $("#creditcard").click(function(){
+             $("#creditCardForm").slideDown(2000); 
+      })
+    });
+
+</script>
+<script>
+  $(document).ready(function(){
+      $("#creditCardForm1").hide();
+      $("#creditcard1").click(function(){
+             $("#creditCardForm1").slideDown(2000); 
+      })
+    });
+
+</script>
+
+</head>
+<body  ng-app="myApp" ng-controller="orderController">
+ 
+    <div class="navbar">
+        
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark navbar-fixed-top" id="navigation">
+                
+            <img src="images/logo1.jpeg" alt="" width="7%">
+            <img src="images/logo2.jpeg" alt="" width="20%" class="center">
+            <ul class = "nav navbar-nav navbar-right nav-item">
+                <li><a href="selection.html">Home</a></li>
+                    </ul>
+      </div>
+        </nav>
+        <div class="wrapper">
+                <img src="images/back1.jpg" class="img-responsive" alt="Responsive image" >
+                <img src="images/back1.jpg" class="img-responsive" alt="Responsive image" height="50%" >
+             </div><div class="centered">
+ <p><h1>Mystic Boutique</h1></p>
+ <p><h1>Stitch your Garment</h1></p>
+ </div>
+  <div class="top-left">
+ <p><h3>Do U Have Fabric?
+ </h3> </p>
+  <form>
+<div class="radio">
+   <label><input type="radio" name="optradio" checked><h4>I Have Fabric </h4></label>
+    <br> <div id="creditcard">
+    <label><input type="radio" name="optradio" ><h4>I Dont have Fabric</h4></label>
+  </div>
+</div><p>
+<div id="creditCardForm">
+   <h3>Select The Fabric Type for shirts</h3> </p> 
+<div class="dropdown"> 
+
+<select name="material_type"style="width:20%;
+padding: 12px 20px;
+  margin: 8px 0;
+ display: inline-block;
+ border: 2px solid black;
+ margin-right:10px;
+  color:black;
+  border-radius:5px;
+ box-sizing: border-box;">
+ <span class="caret"></span></button>
+ <ul class="dropdown-menu">
+<option value="silk">Silk</option>
+<option value="cotton">Cotton</option>
+ <option value="fabric">Fabric</option>
+</select>  </ul> </div> 
+           
+<h3>Select The Fabric Type for Pant</h3> </p> 
+<div class="form-group-row">
+    <select name="material_type"style="width:20%;
+    padding: 12px 20px;
+      margin: 8px 0;
+     display: inline-block;
+     border: 2px solid black;
+     border-radius:5px;
+     margin-right:10px;
+      color:black;
+     box-sizing: border-box;">
+     <span class="caret"></span></button>
+     <ul class="dropdown-menu">
+    <option value="silk">Silk</option>
+    <option value="cotton">Cotton</option>
+     <option value="fabric">Fabric</option>
+    </select>  </ul> </div> 
+    <p>
+        <h3>Choose The Colour for your  Material(shirt)</h3>
+
+          <input type='color' />
+          <p>
+           <h3>Choose The Colour for your  Material(pant)</h3>
+
+             <input type='color' />
+            </form>
+          </div>
+             <h3>You can Style your clothes by providing your own design, Upload Here!</h3>
+                  
+             <form enctype="mutipart/form-data" action="/upload/image" method="post">
+             <input id="image-file" type="file" />
+             
+              
+                <p><h3> Measurements</h3></p>  
+                <form>
+                   <div class="radio">
+                     <label><input type="radio" name="optradio" checked ><h4> Use my  fit garment</h4></label>
+                   </div>
+                   <div class="radio">
+                     <label><input type="radio" name="optradio" ><h4> send the technician to my location</h4></label>
+                   </div>
+                   
+                   <div class="radio">
+                      <div id="creditcard1">
+                  <label><input type="radio" name="optradio"><h4> Provide Online measurements now</h4></label>
+                     </div> </div>
+               </form>  
+                <div id="creditCardForm1">
+               <p><h3>Measurements For Shirt/Sherwani</h3></p>
+               <div class="form-group">
+                  <div class="row">
+                      <div class="col-md-3">
+                 <label for="shirt_len">Shirt Length</label>
+                 <input type="text" class="form-control" style="width:100px;" id="shirt_lens" ng-model="shirtLength" required>
+                 <label for="shoulder_len">Shoulder Length</label>
+                 <input type="text" class="form-control" style="width:100px;" id="shoulder_lens" ng-model="shoulderLength" required></div>
+                 
+                    <div class="col-md-3">
+                 <label for="suit_len">Suit Length</label>
+                 <input type="text" class="form-control" style="width:100px;" id="suit_lens" required>
+                 <label for="sleeve_len">Sleeve Length</label>
+                 <input type="text" class="form-control" style="width:100px;" id="shoulder_lens" ng-model="sleaveLength" required>
+                </div>
+                
+                 <div class="col-md-3">
+                 <label for="sleeve_round">Sleeve round</label>
+                 <input type="text" class="form-control" style="width:100px;" id="shoulder_lens" required>
+                 <label for="chest_round">Chest round</label>
+                 <input type="text" class="form-control" style="width:100px;" id="shoulder_lens" required></div>
+               
+                    <div class="col-md-3">
+                 <label for="waist">Waist</label>
+                 <input type="text" class="form-control" style="width:100px;" id="shoulder_lens" required>
+                 <label for="neck_round">Neck round</label>
+                 <input type="text" class="form-control" style="width:100px;" id="shoulder_lens" required>
+               </div>
+              </div>
+               </div>
+               <p><h3>Measurements For Pant</h3></p>
+     
+
+      <div class="form-group">
+          <div class="row">
+              <div class="col-md-3">
+        <label for="pant_len">Pant Length</label>
+        <input type="text" class="form-control" style="width:100px;" id="pant_lens" required>
+        
+        <label for="knee_len">Knee Length</label>
+        <input type="text" class="form-control" style="width:100px;" id="knee_lens" required></div>
+        <div class="col-md-3">
+        <label for="waist">Waist</label>
+        <input type="text" class="form-control" style="width:100px;" id="waist" required>
+        <label for="hip">Hip</label>
+        <input type="text" class="form-control" style="width:100px;" id="hip" required></div>
+   
+            <div class="col-md-3">
+        <label for="hip">Fork Length</label>
+        <input type="text" class="form-control" style="width:100px;" id="fork_len" required>
+        <label for="thi">Thi</label>
+        <input type="text" class="form-control" style="width:100px;" id="hip" required></div>
+        <div class="col-md-3">
+        <label for="knee_round">Knee round</label>
+        <input type="text" class="form-control" style="width:100px;" id="knee_round" required>
+        <label for="bottom_len">Bottom Length</label>
+        <input type="text" class="form-control" style="width:100px;" id="knee_round" required>
+      </div>
+      </div>
+    </div>
+  </div>
+<form>
+    <p><h3>Expected Date</h3></p>
+    <input type="date" style="Color:black;" ng-model="date">
+   <br> <label for="name"><h3>Enter Name</h3></label>
+    <input type="text" class="form-control" style="width:200px;" id="name" ng-model="name" required>
+    <br> <label for="phone"><h3>Enter Phone</h3></label>
+    <input type="text" class="form-control" style="width:200px;" id="phone" ng-model="phone" required>
+    <br> <label for="address"><h3>Enter Address</h3></label>
+    <input type="text" class="form-control" style="width:200px;" id="knee_round"  ng-model="address" required>
+    <br> <label for="email"><h3>Enter Email</h3></label>
+    <input type="text" class="form-control" style="width:200px;" id="knee_round" ng-model="email" required>
+    <p><h3>Any Specifications regarding design pattern can be provided </h3></p>
+   <input type="text" style="Color:black;
+   width:80%;
+   padding: 30px 0px;" placeholder=" message to the boutique owner " name="msg" required>
+        <a href="#" ng-click="takeMeasurement()">
+        <button type="submit" onclick="window.location.href = 'billing1.html';" class="agile">Confirm Order</button>   </a></p> </div>
+             
+            </div>
+          </form>
+
+
+</body>
+</html>
