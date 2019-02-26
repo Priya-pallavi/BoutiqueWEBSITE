@@ -114,13 +114,44 @@ input[type='radio']{
 
 <script>
   $(document).ready(function(){
-      $("#creditCardForm").hide();
+
       $("#creditcard").click(function(){
-             $("#creditCardForm").slideDown(2000); 
+        $("#creditCardForm").slideUp(1000);
+        $("#creditCardForm").hide();
       })
     });
 
 </script>
+<script>
+    $(document).ready(function(){
+      $("#creditCardForm").hide();
+        $("#creditcard2").click(function(){
+        
+               $("#creditCardForm").slideDown(2000); 
+               $("#creditCardForm").show();
+        })
+      });
+      </script>
+      <script>
+          $(document).ready(function(){
+        
+              $("#measurements1").click(function(){
+                $("#creditCardForm1").slideUp(2000);
+                $("#creditCardForm1").hide();
+              })
+            });
+        
+        </script>
+      <script>
+                  $(document).ready(function(){
+                
+                    $("#measurements2").click(function(){
+                        $("#creditCardForm1").slideUp(5000);
+                        $("#creditCardForm1").hide();
+                      })
+                    });
+                
+                </script>
 <script>
   $(document).ready(function(){
       $("#creditCardForm1").hide();
@@ -157,8 +188,9 @@ input[type='radio']{
  </h3> </p>
   <form>
 <div class="radio">
-   <label><input type="radio" name="optradio" checked><h4>I Have Fabric </h4></label>
-    <br> <div id="creditcard">
+    <div id="creditcard">
+        <label><input type="radio" name="optradio" checked><h4>I Have Fabric </h4></label></div>
+    <br> <div id="creditcard2">
     <label><input type="radio" name="optradio" ><h4>I Dont have Fabric</h4></label>
   </div>
 </div><p>
@@ -218,11 +250,13 @@ padding: 12px 20px;
                 <p><h3> Measurements</h3></p>  
                 <form>
                    <div class="radio">
+                       <div id="measurements1">
                      <label><input type="radio" name="optradio" checked ><h4> Use my  fit garment</h4></label>
-                   </div>
+                       </div></div>
                    <div class="radio">
+                       <div id="measurements2">
                      <label><input type="radio" name="optradio" ><h4> send the technician to my location</h4></label>
-                   </div>
+                       </div></div>
                    
                    <div class="radio">
                       <div id="creditcard1">
